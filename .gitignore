@@ -1,0 +1,27 @@
+# Dependencias
+/backend/vendor/
+/backend/node_modules/
+/frontend/node_modules/
+
+# Archivos de entorno
+/backend/.env
+/frontend/.env
+
+# Archivos de build
+/backend/public/build/
+/frontend/dist/
+
+# Credenciales locales
+CREDENCIALES.txt
+AGENTS.md
+/graphify-out
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+/.opencode

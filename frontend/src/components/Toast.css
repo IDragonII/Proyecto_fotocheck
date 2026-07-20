@@ -1,0 +1,124 @@
+.toast-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  pointer-events: none;
+}
+
+.toast {
+  pointer-events: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-width: 300px;
+  max-width: 480px;
+  padding: 12px 16px;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  animation: toastSlideIn 0.3s ease;
+  font-size: 13.5px;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.toast-success {
+  background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%);
+  color: #fff;
+}
+
+.toast-error {
+  background: linear-gradient(135deg, #EF4444 0%, #DC2626 100%);
+  color: #fff;
+}
+
+.toast-warning {
+  background: linear-gradient(135deg, #c9a85a 0%, #b8943d 100%);
+  color: #fff;
+}
+
+.toast-info {
+  background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+  color: #fff;
+}
+
+.toast-confirm {
+  background: var(--bg, #fff);
+  color: var(--text-h, #1f2937);
+  border: 1px solid var(--border, #e2e8f0);
+  flex-direction: column;
+  align-items: stretch;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+}
+
+.toast-confirm .toast-message {
+  text-align: center;
+}
+
+.toast-message {
+  flex: 1;
+}
+
+.toast-close {
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: 18px;
+  cursor: pointer;
+  opacity: 0.7;
+  padding: 0 4px;
+  line-height: 1;
+  transition: opacity 0.15s;
+}
+
+.toast-close:hover {
+  opacity: 1;
+}
+
+.toast-actions {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.toast-btn {
+  padding: 6px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 12.5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.15s, transform 0.15s;
+
+  &:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+  }
+}
+
+.toast-btn-cancel {
+  background: var(--bg-secondary, #FAF5FF);
+  color: var(--text, #4a5568);
+  border: 1px solid var(--border, #e2e8f0);
+}
+
+.toast-btn-confirm {
+  background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+  color: #fff;
+}
+
+@keyframes toastSlideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

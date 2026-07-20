@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Fira+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --primary: #1e40af;
+  --primary-hover: #1e3a8a;
+  --primary-light: #3b82f6;
+  --primary-bg: rgba(30, 64, 175, 0.08);
+  --primary-border: rgba(30, 64, 175, 0.25);
+
+  --cta: #c9a85a;
+  --cta-hover: #b8943d;
+  --cta-bg: rgba(201, 168, 90, 0.1);
+
+  --text: #4a5568;
+  --text-secondary: #2d3748;
+  --text-h: #1a202c;
+  --text-muted: #718096;
+
+  --bg: #ffffff;
+  --bg-secondary: #f7fafc;
+  --bg-tertiary: #edf2f7;
+
+  --border: #e2e8f0;
+  --border-strong: #cbd5e0;
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06);
+  --shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.12);
+  --shadow-xl: 0 12px 48px rgba(0, 0, 0, 0.16);
+
+  --radius-sm: 6px;
+  --radius: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+
+  --sans: 'Fira Sans', system-ui, -apple-system, sans-serif;
+  --heading: 'Fira Sans', system-ui, -apple-system, sans-serif;
+  --mono: 'Fira Code', ui-monospace, Consolas, monospace;
+
+  font: 15px/1.6 var(--sans);
+  color-scheme: light;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  background: var(--bg-secondary);
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100vh;
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+h1, h2, h3 {
+  font-family: var(--heading);
+  font-weight: 700;
+  color: var(--text-h);
+  letter-spacing: -0.3px;
+}
+
+h1 {
+  font-size: 26px;
+}
+
+h2 {
+  font-size: 20px;
+  line-height: 1.3;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+p {
+  margin: 0;
+}
+
+code {
+  font-family: var(--mono);
+}
