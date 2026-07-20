@@ -810,5 +810,3 @@ POST /api/ext/tickets → crearTicket()
 **Ivan Rony Condori Inquilla**
 Universidad Nacional del Altiplano - Puno
 (051) 363-282 | rrhh@unap.edu.pe
-zzzzzzzzzzzzzzzzzzz#   P r o y e c t o _ f o t o c h e c k  
- 
